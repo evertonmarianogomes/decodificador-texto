@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Decodificador de Texto</title>
+    <link rel="stylesheet" href="src/style.css">
+
+    <script src="./src/index.js" type="module" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/alura_icon_2.png" alt="Imagem do Logo da Alura" class="img_logo">
+    </header>
+
+    <main class="container">
+        <section>
+            <img src="./images/alura_icon_2.png" alt="Imagem do Logo da Alura" class="img_logo_pc">
+            <input type="text" class="input_text" id="input_text" placeholder="Digite seu texto" />
+            <span class="message_warning">
+                <img src="./images/bi_exclamation-circle-fill.png" alt="Icone de Exclamação">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </span>
+
+            <div class="actions">
+                <button class="crypt" id="btn_crypt">Criptografar</button>
+                <button class="decrypt" id="btn_decrypt">Descriptografar</button>
+            </div>
+
+        </section>
+
+
+        <div id="messages" class="messages">
+            <div class="message_empty" id="message_empty">
+                <img src="./images/message_empty_image.png" alt="IMAGEM MENSAGEM VAZIA" class="img_empty_pc">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <textarea id="message_one" class="message_one"></textarea>
+
+            <button class="copy_message" id="copy_message">Copiar</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Feito por <a href="https://github.com/evertonmarianogomes" target="_blank">Everton M. Gomes</a></p>
+        <p>Challenge de Programação - Programa Oracle One</p>
+    </footer>
+</body>
+
+</html>
